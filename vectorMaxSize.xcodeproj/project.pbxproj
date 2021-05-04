@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		40AF8A05175F1CF200ED729D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40AF8A04175F1CF200ED729D /* main.cpp */; };
-		40AF8A07175F1CF200ED729D /* vectorMaxSize.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40AF8A06175F1CF200ED729D /* vectorMaxSize.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +17,15 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				40AF8A07175F1CF200ED729D /* vectorMaxSize.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		400B055226397CEB008C582F /* timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		40AF8A01175F1CF200ED729D /* vectorMaxSize */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vectorMaxSize; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AF8A04175F1CF200ED729D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		40AF8A06175F1CF200ED729D /* vectorMaxSize.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = vectorMaxSize.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				40AF8A04175F1CF200ED729D /* main.cpp */,
-				40AF8A06175F1CF200ED729D /* vectorMaxSize.1 */,
+				400B055226397CEB008C582F /* timer.h */,
 			);
 			path = vectorMaxSize;
 			sourceTree = "<group>";
@@ -100,7 +98,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 40AF89F8175F1CF200ED729D;
 			productRefGroup = 40AF8A02175F1CF200ED729D /* Products */;
@@ -172,6 +172,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -184,6 +185,8 @@
 		40AF8A0B175F1CF200ED729D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -191,6 +194,8 @@
 		40AF8A0C175F1CF200ED729D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -214,6 +219,7 @@
 				40AF8A0C175F1CF200ED729D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
