@@ -8,9 +8,11 @@
 
 #ifndef timer_h
 #define timer_h
-#include <ctime>
+
 #include <iostream>
 #include <string>
+
+#include <ctime>
 
 const auto millis= 1'000'000.0;
 class Timer {
